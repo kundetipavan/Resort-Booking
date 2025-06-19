@@ -54,8 +54,7 @@ export default function LanguageSelector() {
           {languages.map((language) => (
             <SelectItem key={language.code} value={language.code} className="cursor-pointer">
               <div className="flex items-center space-x-2">
-                <span>{language.flag}</span>
-                <span>{language.name}</span>
+                 <span>{language.name}</span>
               </div>
             </SelectItem>
           ))}

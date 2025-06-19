@@ -23,7 +23,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 20;
+      const isScrolled = window.scrollY > 10;
       if (isScrolled !== scrolled) {
         setScrolled(isScrolled);
       }
@@ -39,7 +39,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex space-x-8">
+        <ul className="hidden md:flex space-x-8 ">
           {navLinks.map(link => <li key={link.name} className="relative">
               <Link to={link.path} className="font-medium transition-colors hover:text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">
                 {link.name}
